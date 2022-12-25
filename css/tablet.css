@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Truy vấn với màn hình Tablet */
+
+@media (min-width: 576px) and (max-width: 991px) {
+    #banner h1 {
+        font-size: 30px !important;
+    }
+    #banner span {
+        font-size: 18px !important;
+    }
+    #project h5,
+    #project tr {
+        font-size: 14px !important;
+    }
+    /* Tạo viền phần Chứng chỉ - Giải thưởng */
+    .border-certificate {
+        border-bottom: solid 2px #f86a05;
+    }
+    #footer a {
+        font-size: 20px;
+    }
+}

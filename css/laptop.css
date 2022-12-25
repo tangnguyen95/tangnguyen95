@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+@media screen and (min-width: 992px) {
+    /* Tạo ảnh Avatar bo tròn và nằm giữa #nav-bar */
+    #nav-bar img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: solid 15px #fff;
+    }
+    #about .padding-css {
+        padding-left: 200px;
+    }
+    #banner h1 {
+        font-size: 40px !important;
+    }
+    #banner span {
+        font-size: 24px !important;
+    }
+    .border-certificate {
+        border-bottom: solid 2px #f86a05;
+    }
+    #footer a {
+        font-size: 24px;
+    }
+}
+
+
+/* Tạo hiệu ứng cho các thẻ a */
+
+#nav-bar a:hover {
+    color: #072fd1;
+}
+
+#about a:hover {
+    background-color: #d2d2f7;
+    border-radius: 30%;
+}
+
+#project a:link {
+    text-decoration: none;
+}
+
+#project a:hover {
+    color: #000517;
+    text-decoration: none;
+}
+
+
+/*  Thay đổi vị trí các grid cell trong phần Job-Info */
+
+#job-info .skill {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+
+/* Đổi màu các dấu chấm trước các thẻ li thành màu xanh trong Job-Info */
+
+#job-info ul {
+    list-style: none;
+    position: relative;
+}
+
+#job-info ul::before {
+    content: "";
+    background-color: #072fd1;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+}

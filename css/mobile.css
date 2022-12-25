@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Truy vấn với màn hình Mobile */
+
+@media (max-width: 575px) {
+    #nav-bar a {
+        font-size: 14px !important;
+    }
+    #about {
+        font-size: 14px !important;
+    }
+    #job-info {
+        font-size: 14px !important;
+    }
+    #project h5,
+    #project tr {
+        font-size: 14px !important;
+    }
+    /* Tạo viền phần Chứng chỉ - Giải thưởng */
+    .border-certificate {
+        border-bottom: solid 2px #f86a05;
+    }
+}
